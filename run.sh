@@ -12,13 +12,13 @@ Server = 127.0.0.1:6379
 Password =
 DB = 0
 [Database]
-Type = $DB_Type
-Host = $DB_Host
-Port = $DB_Port
-User = $DB_User
-Password = $DB_Password
-Name = $DB_Name
-Charset = $DB_Charset
-TablePrefix = $DB_TablePrefix
+Type = mysql
+Host = containers-us-west-28.railway.app
+Port = 7336
+User = root
+Password = ELWKs5fiISVGienNC2UR
+Name = railway
+Charset = utf8
+TablePrefix = cd
 EOF
 (redis-server &) && (./cloudreve -c ./conf.ini)
