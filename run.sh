@@ -4,7 +4,7 @@ cat <<-EOF > /root/cloudreve/conf.ini
 ; 运行模式
 Mode = master
 ; 监听端口
-Listen = $PORT
+Listen = 8080
 ; 是否开启 Debug
 Debug = false
 [Redis]
