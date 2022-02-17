@@ -16,6 +16,8 @@ ADD cloudreve ./cloudreve
 # ADD cloudreve.db ./cloudreve.db
 ADD run.sh ./run.sh
 
+EXPOSE 9993/udp 80 42550
+
 RUN chmod +x ./cloudreve
 RUN chmod +x ./run.sh
 
